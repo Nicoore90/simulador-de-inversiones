@@ -1,0 +1,15 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#mainTitle {
+    color: white;
+}
