@@ -10,6 +10,60 @@ header {
     padding: 20px;
 }
 
+#introduccion {
+    padding: 15px;
+}
+
+#links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.botones {
+    background-color: aqua;
+    border: black 1px solid;
+    border-radius: 25%;
+    width: 10%;
+    padding: 10px;
+
+}
+
+
 #mainTitle {
     color: white;
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    align-self: center;
+}f
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    margin-bottom: 50px;
+}
+
+#bono {
+    margin-bottom: 50px;
+}
+
+button {
+    display: block;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+#instrucciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

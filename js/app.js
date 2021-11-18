@@ -1,3 +1,7 @@
+
+
+
+
 class bono {
     constructor (Nombre, Codigo, cotPesos, cotDolares) {
         this.Nombre = Nombre;
@@ -5,13 +9,6 @@ class bono {
         this.cotPesos = cotPesos;
         this.cotDolares = cotDolares;
     }
-        dolarMep(p) {
-            let nominales = parseInt((p / this.cotPesos)*0.99);
-            let dolares = parseInt((nominales * this.cotDolares)*0.99);
-            document.write(`<p>Con los ${p} que ingresaste vas a comprar ${nominales} valores nominales del bono ${this.Codigo}</p>`);
-            document.write(`<p>Despues vas a esperar 24 hs y vas a vender tus ${nominales} nominales con la especie ${this.Codigo}D</p>`);
-            document.write(`<p>En total vas a terminar con aproximadamente US$ ${dolares} dolares, los cuales vas a poder transferir a tu cuenta bancaria en moneda extranjera.</p>`);
-        }
 }
 
 const AL30 = new bono ("Bonar 2030", "AL30", 64.26, 0.3546)
@@ -26,28 +23,62 @@ const GD30 = new bono ("Global 2030", "GD30", 73.86, 0.3663)
 
 let bonosArgy = [AL30, AL29, AL35, GD29, GD30]
 
-let ingreso = parseInt(prompt("Ingresa el importe en pesos que quieras invertir"))
+let monto
 
-let titulo = prompt("Ingresa el bono que queres operar")
+let papel
 
-let papel = titulo.toUpperCase()
+let titulo
 
-if (titulo == "AL30" || titulo == "al30") {
-    AL30.dolarMep(ingreso);
-} else if(titulo == "AL29" || titulo == "al29") {
-    AL29.dolarMep(ingreso);
-} else if (titulo == "AL35" || titulo == "al35") {
-    AL35.dolarMep(ingreso);
-} else if (titulo == "GD29" || titulo == "gd29") {
-    GD29.dolarMep(ingreso);
-} else if (titulo == "GD30" || titulo == "gd30") {
-    GD30.dolarMep(ingreso);
-} else {
-    document.write("<p>El bono que ingresaste no existe en nuestra base de datos. Revisa si ingresaste bien el codigo.</p>")
+let nominales
+
+let eftDolares
+
+let ticker
+
+let boton = document.getElementById("calcular");
+
+boton.addEventListener("click", calcular);
+
+function calcular(e) {
+    e.preventDefault();
+    monto = parseInt(document.getElementById("importe").value);
+    papel = document.getElementById("bono").value;
+    titulo = papel.toUpperCase()
+    console.log(monto)
+    console.log(typeof(monto))
+    console.log(papel)
+    console.log(typeof papel)
+    console.log(titulo)
+    console.log(typeof(titulo))
+    if (titulo == "AL30") {
+        nominales = parseInt((monto/AL30.cotPesos)*0.99)
+        eftDolares = parseInt((nominales*AL30.cotDolares)*0.99)
+        ticker = AL30.Codigo
+    } else if (titulo == "AL29") {
+        nominales = parseInt((monto/AL29.cotPesos)*0.99)
+        eftDolares = parseInt((nominales*AL29.cotDolares)*0.99)
+        ticker = AL29.Codigo
+    } else if (titulo == "AL35") {
+        nominales = parseInt((monto/AL35.cotPesos)*0.99)
+        eftDolares = parseInt((nominales*AL35.cotDolares)*0.99)
+        ticker = AL35.Codigo
+    } else if (titulo == "GD29") {
+        nominales = parseInt((monto/GD29.cotPesos)*0.99)
+        eftDolares = parseInt((nominales*GD29.cotDolares)*0.99)
+        ticker = GD29.Codigo
+    } else if (titulo == "GD30") {
+        nominales = parseInt((monto/GD30.cotPesos)*0.99)
+        eftDolares = parseInt((nominales*GD30.cotDolares)*0.99)
+        ticker = GD30.Codigo
+    } else {
+        titulo = undefined
+    }
+    let parrafo = document.getElementById("instrucciones")
+    if(titulo != undefined) {
+        parrafo.innerHTML = `<ol><li>Con los ${monto} que ingresaste vas a comprar ${nominales} valores nominales del bono ${ticker}</li>` + `<li>Despues vas a esperar 24 hs y vas a vender tus ${nominales} nominales con la especie ${ticker}D</li>` + `<li>En total vas a terminar con aproximadamente US$ ${eftDolares} dolares, los cuales vas a poder transferir a tu cuenta bancaria en moneda extranjera.</li></ol>`
+        document.body.appendChild(parrafo);
+    }else {
+        parrafo.innerHTML = "<p>El bono que ingresaste no se encuentra en nuestra base de datos. Por favor corrobora si ingresaste bien el codigo</p>"
+        document.body.appendChild(parrafo);
+    }
 }
-
-const buscarBono = bonosArgy.find(bonosArgy => bonosArgy.Codigo == papel)
-
-console.log("Estos son los datos del bono que elegiste")
-
-console.log(buscarBono)
