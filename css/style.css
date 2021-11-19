@@ -4,10 +4,16 @@
 }
 
 header {
-    background-color: blue;
+    background-color: #c6ff6a;
     display: flex;
     justify-content: center;
     padding: 20px;
+}
+
+main {
+    background-image: url("../assets/fondo.png");
+    background-repeat: no-repeat;
+    height: 500px;
 }
 
 #introduccion {
@@ -21,7 +27,7 @@ header {
 }
 
 .botones {
-    background-color: aqua;
+    background-color: #c6ff6a;
     border: black 1px solid;
     border-radius: 25%;
     width: 10%;
@@ -66,4 +72,8 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+a {
+    text-decoration: none;
 }
