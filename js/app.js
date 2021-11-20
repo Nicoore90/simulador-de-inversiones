@@ -11,15 +11,15 @@ class bono {
     }
 }
 
-const AL30 = new bono ("Bonar 2030", "AL30", 64.26, 0.3546)
+const AL30 = new bono ("Bonar 2030", "AL30", 63.75, 0.314)
 
-const AL29 = new bono ("Bonar 2029", "AL29", 68.41, 0.3715)
+const AL29 = new bono ("Bonar 2029", "AL29", 68.20, 0.343)
 
-const AL35 = new bono ("Bonar 2035", "AL35", 62.55, 0.341)
+const AL35 = new bono ("Bonar 2035", "AL35", 62.45, 0.3149)
 
-const GD29 = new bono ("Global 2029", "GD29", 78.40, 0.378)
+const GD29 = new bono ("Global 2029", "GD29", 77.80, 0.388)
 
-const GD30 = new bono ("Global 2030", "GD30", 73.86, 0.3663)
+const GD30 = new bono ("Global 2030", "GD30", 72.90, 0.3546)
 
 let bonosArgy = [AL30, AL29, AL35, GD29, GD30]
 
@@ -76,9 +76,7 @@ function calcular(e) {
     let parrafo = document.getElementById("instrucciones")
     if(titulo != undefined) {
         parrafo.innerHTML = `<ol><li>Con los ${monto} que ingresaste vas a comprar ${nominales} valores nominales del bono ${ticker}</li>` + `<li>Despues vas a esperar 24 hs y vas a vender tus ${nominales} nominales con la especie ${ticker}D</li>` + `<li>En total vas a terminar con aproximadamente US$ ${eftDolares} dolares, los cuales vas a poder transferir a tu cuenta bancaria en moneda extranjera.</li></ol>`
-        document.body.appendChild(parrafo);
     }else {
         parrafo.innerHTML = "<p>El bono que ingresaste no se encuentra en nuestra base de datos. Por favor corrobora si ingresaste bien el codigo</p>"
-        document.body.appendChild(parrafo);
     }
 }

@@ -13,11 +13,17 @@ header {
 main {
     background-image: url("../assets/fondo.png");
     background-repeat: no-repeat;
+    background-size: cover;
     height: 500px;
 }
 
 #introduccion {
     padding: 15px;
+}
+
+#introduccion p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1em;
 }
 
 #links {
@@ -32,25 +38,43 @@ main {
     border-radius: 25%;
     width: 10%;
     padding: 10px;
-
 }
 
+.botones p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
 
-#mainTitle {
-    color: white;
+#informacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+#calculadora {
+    align-self: center;
+    margin-top: 20px;
 }
 
 #formulario {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
-    align-self: center;
-}f
+    margin-left: 500px;
+    width: 30%;
+    align-content: center;
+}
 
 label {
     display: block;
     margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
 
 input {
@@ -65,6 +89,8 @@ button {
     display: block;
     padding: 10px;
     margin-bottom: 50px;
+    background-color: #c6ff6a;
+    border-radius: 4px;
 }
 
 #instrucciones {
@@ -72,8 +98,24 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+#volver {
+    width: 100px;
+    margin-left: 500px;
+    margin-top: 10px;
 }
 
 a {
     text-decoration: none;
+}
+
+footer {
+    background-color: #c6ff6a;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

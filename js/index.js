@@ -15,7 +15,7 @@ function letra () {
 let bonos = document.getElementById("bonos");
 bonos.addEventListener("click", bono);
 function bono () {
-    info.innerHTML = "<p>Los bonos son un titulo de deuda del Estado a mediano y largo plazo. Un Estado puede necesitar financiamiento por varias razones, y una de las formas de obtener este dinero es mediante la emision de deuda. Los bonos tienen un precio que va a variar de acuerdo a (entre otros factores) la confianza de los inversores en que el Estado emisor va a poder hacer frente a sus compromisos. Esto se mide con un indicador denominado 'riesgo pais'. Algunos bonos cotizan en pesos y en dolares, lo que nos permite comprar dolares por medio del mercado de capitales. Los bonos tambien tienen un flujo de fondos estipulado donde estan los pagos de intereses y de capital. </p>" + "<div class='botones'><a href='./pages/calculadora.html'>Calculadora Mep</a></div>"
+    info.innerHTML = "<p>Los bonos son un titulo de deuda del Estado a mediano y largo plazo. Un Estado puede necesitar financiamiento por varias razones, y una de las formas de obtener este dinero es mediante la emision de deuda. Los bonos tienen un precio que va a variar de acuerdo a (entre otros factores) la confianza de los inversores en que el Estado emisor va a poder hacer frente a sus compromisos. Esto se mide con un indicador denominado 'riesgo pais'. Algunos bonos cotizan en pesos y en dolares, lo que nos permite comprar dolares por medio del mercado de capitales. Los bonos tambien tienen un flujo de fondos estipulado donde estan los pagos de intereses y de capital. </p>" + "<div class='botones' id='calculadora'><a href='./pages/calculadora.html'>Calculadora Mep</a></div>"
 }
 
 let obligaciones = document.getElementById("ON");
