@@ -35,14 +35,14 @@ let eftDolares
 
 let ticker
 
-let boton = document.getElementById("calcular");
+//let boton = document.getElementById("calcular");
 
-boton.addEventListener("click", calcular);
+//boton.addEventListener("click", calcular);
 
-function calcular(e) {
+$("#calcular").click (function calcular(e) {
     e.preventDefault();
-    monto = parseInt(document.getElementById("importe").value);
-    papel = document.getElementById("bono").value;
+    monto = parseInt($("#importe").val());
+    papel = $("#bono").val();
     titulo = papel.toUpperCase()
     console.log(monto)
     console.log(typeof(monto))
@@ -50,6 +50,7 @@ function calcular(e) {
     console.log(typeof papel)
     console.log(titulo)
     console.log(typeof(titulo))
+    
     if (titulo == "AL30") {
         nominales = parseInt((monto/AL30.cotPesos)*0.99)
         eftDolares = parseInt((nominales*AL30.cotDolares)*0.99)
@@ -73,10 +74,12 @@ function calcular(e) {
     } else {
         titulo = undefined
     }
+
     let parrafo = document.getElementById("instrucciones")
     if(titulo != undefined) {
-        parrafo.innerHTML = `<ol><li>Con los ${monto} que ingresaste vas a comprar ${nominales} valores nominales del bono ${ticker}</li>` + `<li>Despues vas a esperar 24 hs y vas a vender tus ${nominales} nominales con la especie ${ticker}D</li>` + `<li>En total vas a terminar con aproximadamente US$ ${eftDolares} dolares, los cuales vas a poder transferir a tu cuenta bancaria en moneda extranjera.</li></ol>`
+        $("#instrucciones").html(`<ol><li>Con los ${monto} que ingresaste vas a comprar ${nominales} valores nominales del bono ${ticker}</li>` + `<li>Despues vas a esperar 24 hs y vas a vender tus ${nominales} nominales con la especie ${ticker}D</li>` + `<li>En total vas a terminar con aproximadamente US$ ${eftDolares} dolares, los cuales vas a poder transferir a tu cuenta bancaria en moneda extranjera.</li></ol>`)
     }else {
-        parrafo.innerHTML = "<p>El bono que ingresaste no se encuentra en nuestra base de datos. Por favor corrobora si ingresaste bien el codigo</p>"
+        $("#instrucciones").html("<p>El bono que ingresaste no se encuentra en nuestra base de datos. Por favor corrobora si ingresaste bien el codigo</p>")
     }
-}
+    $("#instrucciones").slideDown();
+})

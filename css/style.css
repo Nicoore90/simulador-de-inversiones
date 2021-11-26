@@ -14,7 +14,7 @@ main {
     background-image: url("../assets/fondo.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
+    height: 1000px;
 }
 
 #introduccion {
@@ -38,6 +38,9 @@ main {
     border-radius: 25%;
     width: 10%;
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .botones p{
@@ -54,6 +57,15 @@ main {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     color: black;
+    height: 500px;
+    background-image: url("../assets/postit.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#informacion p {
+    width: 300px;
+    align-self: center;
 }
 
 #calculadora {
@@ -100,6 +112,9 @@ button {
     align-items: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
+    background-color: #e3fc5a;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 #volver {
