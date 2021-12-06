@@ -1,4 +1,18 @@
 
+let nombreUsuario 
+//localStorage.setItem("nombre", JSON.stringify(nombreUsuario))
+
+$("#enviarNombre").click(() => {
+    nombreUsuario = $('#nombre').val()
+    localStorage.setItem("nombre", nombreUsuario)
+    console.log(localStorage.nombre)
+    let saludo = document.createElement("div")
+    saludo.innerHTML = "<h2>Bienvenido " + localStorage.nombre + "</h2>"
+    $("#introduccion").prepend(saludo)
+})
+
+//localStorage.setItem("nombre", $("#nombre").value)
+
 $("#cauciones").click (function caucion () {
     $("#informacion").hide();
     $("#informacion").slideDown(1000, ()=> {
