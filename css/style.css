@@ -134,3 +134,15 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
+#boton {
+    align-self: center;
+    margin-top: 20px;
+}
+
+#datos {
+    display: flex;
+    justify-content:flex-start;
+    align-items: space-between;
+    margin-left: 50px;
+}

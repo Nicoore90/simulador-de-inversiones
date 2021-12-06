@@ -1,0 +1,27 @@
+[
+    {
+        "ticker" : "GGAL",
+        "nombre" : "Banco Galicia",
+        "rubro" : "financiero"
+    },
+    {
+        "ticker" : "BBAR",
+        "nombre" : "Banco BBVA Argentina",
+        "rubro" : "financiero"
+    },
+    {
+        "ticker" : "PAMP",
+        "nombre" : "Pampa Energia",
+        "rubro" : "energia"
+    },
+    {
+        "ticker" : "YPFD",
+        "nombre" : "Yacimientos Petroliferos Fiscales (YPF)",
+        "rubro" : "petrolifero"
+    },
+    {
+        "ticker" : "CVH",
+        "nombre" : "Cablevision Holding S.A.",
+        "rubro" : "medios de comunicacion"
+    }
+]
