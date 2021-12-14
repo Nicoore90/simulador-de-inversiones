@@ -1,0 +1,12 @@
+[
+    {
+        "ticker" : "ALUA",
+        "nombre" : "Aluar S.A.",
+        "rubro" : "metalurgica"
+    },
+    {
+        "ticker" : "TXAR",
+        "nombre" : "Ternium Argentina",
+        "rubro" : "metalurgica"
+    }
+]

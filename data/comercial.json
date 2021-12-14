@@ -1,0 +1,12 @@
+[
+    {
+        "ticker" : "CEPU",
+        "nombre" : "Central Puerto S.A.",
+        "rubro" : "comercial"
+    },
+    {
+        "ticker" : "COME",
+        "nombre" : "Soc Comercial del Plata S.A.",
+        "rubro" : "comercial"
+    }
+]

@@ -1,0 +1,27 @@
+[
+    {
+        "ticker" : "GGAL",
+        "nombre" : "Banco Galicia",
+        "rubro" : "financiero"
+    },
+    {
+        "ticker" : "BBAR",
+        "nombre" : "Banco BBVA Argentina",
+        "rubro" : "financiero"
+    },
+    {
+        "ticker" : "BMA",
+        "nombre" : "Banco Macro S.A.",
+        "rubro" : "financiero"
+    },
+    {
+        "ticker" : "SUPV",
+        "nombre" : "Banco Supervielle",
+        "rubro" : "financiero"
+    },
+    {
+        "ticker" : "VALO",
+        "nombre" : "Grupo Financiero Valores S.A.",
+        "rubro" : "financiero"
+    }
+]

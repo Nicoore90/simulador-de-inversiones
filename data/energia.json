@@ -1,0 +1,27 @@
+[
+    {
+        "ticker" : "PAMP",
+        "nombre" : "Pampa Energia",
+        "rubro" : "energia"
+    },
+    {
+        "ticker" : "EDN",
+        "nombre" : "Edenor S.A.",
+        "rubro" : "energia"
+    },
+    {
+        "ticker" : "TGNO4",
+        "nombre" : "Transportadora de Gas del Norte S.A.",
+        "rubro" : "energia"
+    },
+    {
+        "ticker" : "TGSU2",
+        "nombre" : "Transportadora de Gas del Sur S.A.",
+        "rubro" : "energia"
+    },
+    {
+        "ticker" : "TRAN",
+        "nombre" : "Transener",
+        "rubro" : "energia"
+    }
+]

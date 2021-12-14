@@ -23,5 +23,95 @@
         "ticker" : "CVH",
         "nombre" : "Cablevision Holding S.A.",
         "rubro" : "medios de comunicacion"
+    },
+    {
+        "ticker" : "ALUA",
+        "nombre" : "Aluar S.A.",
+        "rubro" : "metalurgica"
+    },
+    {
+        "ticker" : "BMA",
+        "nombre" : "Banco Macro S.A.",
+        "rubro" : "financiero"
+    },
+    {
+        "ticker" : "BYMA",
+        "nombre" : "Bolsas y Mercados Argentina S.A.",
+        "rubro" : "bursatil"
+    },
+    {
+        "ticker" : "CEPU",
+        "nombre" : "Central Puerto S.A.",
+        "rubro" : "comercial"
+    },
+    {
+        "ticker" : "COME",
+        "nombre" : "Soc Comercial del Plata S.A.",
+        "rubro" : "comercial"
+    },
+    {
+        "ticker" : "CRES",
+        "nombre" : "Cresud S.A.C.I.F.",
+        "rubro" : "real state"
+    },
+    {
+        "ticker" : "EDN",
+        "nombre" : "Edenor S.A.",
+        "rubro" : "energia"
+    },
+    {
+        "ticker" : "HARG",
+        "nombre" : "Holcim Argentina",
+        "rubro" : "cementera"
+    },
+    {
+        "ticker" : "LOMA",
+        "nombre" : "Loma Negra S.A.",
+        "rubro" : "cementera"
+    },
+    {
+        "ticker" : "MIRG",
+        "nombre" : "Mirgor",
+        "rubro" : "tecnologia"
+    },
+    {
+        "ticker" : "RICH",
+        "nombre" : "Laboratorios Richmond",
+        "rubro" : "farmaceutica"
+    },
+    {
+        "ticker" : "SUPV",
+        "nombre" : "Banco Supervielle",
+        "rubro" : "financiero"
+    },
+    {
+        "ticker" : "TECO2",
+        "nombre" : "Telecom Argentina",
+        "rubro" : "telefonia"
+    },
+    {
+        "ticker" : "TGNO4",
+        "nombre" : "Transportadora de Gas del Norte S.A.",
+        "rubro" : "energia"
+    },
+    {
+        "ticker" : "TGSU2",
+        "nombre" : "Transportadora de Gas del Sur S.A.",
+        "rubro" : "energia"
+    },
+    {
+        "ticker" : "TRAN",
+        "nombre" : "Transener",
+        "rubro" : "energia"
+    },
+    {
+        "ticker" : "TXAR",
+        "nombre" : "Ternium Argentina",
+        "rubro" : "metalurgica"
+    },
+    {
+        "ticker" : "VALO",
+        "nombre" : "Grupo Financiero Valores S.A.",
+        "rubro" : "financiero"
     }
 ]

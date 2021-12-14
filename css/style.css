@@ -14,7 +14,7 @@ main {
     background-image: url("../assets/fondo.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 1000px;
+    height: 2500px;
 }
 
 #introduccion {
@@ -125,6 +125,14 @@ button {
 
 a {
     text-decoration: none;
+}
+
+#selector {
+    display: none;
+}
+
+#ver {
+    display: none;
 }
 
 footer {

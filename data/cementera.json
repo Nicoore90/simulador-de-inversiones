@@ -1,0 +1,12 @@
+[
+    {
+        "ticker" : "HARG",
+        "nombre" : "Holcim Argentina",
+        "rubro" : "cementera"
+    },
+    {
+        "ticker" : "LOMA",
+        "nombre" : "Loma Negra S.A.",
+        "rubro" : "cementera"
+    }
+]
