@@ -7,6 +7,7 @@ header {
     background-color: #c6ff6a;
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 20px;
 }
 
@@ -14,7 +15,13 @@ main {
     background-image: url("../assets/fondo.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 2500px;
+    height: 500px;
+}
+
+#paginas {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
 }
 
 p {
@@ -37,9 +44,21 @@ a {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+#cuerpo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+}
+
 #links {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    margin-left: 0px;
+    padding-right: 100px;
 }
 
 .botones {
@@ -47,10 +66,12 @@ a {
     border: black 1px solid;
     border-radius: 25%;
     width: 10%;
-    padding: 10px;
+    padding: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 20px;
+    height: 50px;
 }
 
 .botones p{
@@ -58,19 +79,44 @@ a {
     font-weight: bold;
 }
 
+#cauciones {
+    width: 75px;
+}
+
+#letras {
+    width: 75px;
+}
+
+#bonos {
+    width: 75px;
+}
+
+#ON {
+    width: 75px;
+}
+
+#acciones {
+    width: 75px;
+}
+
+#cedears {
+    width: 75px;
+}
+
 #informacion {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
+    align-content: flex-end;
     padding: 50px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     color: black;
-    height: 500px;
+    height: auto;
     background-image: url("../assets/postitSmall.png");
     background-repeat: no-repeat;
     background-position: center;
+    width: 100%;
 }
 
 #informacion p {
@@ -79,7 +125,7 @@ a {
 }
 
 #info {
-    font-size: 0.3em;
+    font-size: 0.5em;
 }
 
 #calculadora {
@@ -91,8 +137,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 500px;
-    width: 30%;
+    width: 50%;
     align-content: center;
 }
 
@@ -133,7 +178,7 @@ button {
 
 #volver {
     width: 100px;
-    margin-left: 500px;
+    margin-left: 100px;
     margin-top: 10px;
 }
 
@@ -170,6 +215,12 @@ footer {
     margin-left: 50px;
 }
 
+i {
+    font-size: 2em;
+    text-decoration: none;
+    color: black;
+}
+
 @media (min-width: 600px) {
     p {
         font-size: 1em;
@@ -188,6 +239,42 @@ footer {
     }
 
     #informacion {
-        background-image: url("../assets/postit.jpg");
+        background-image: url("../assets/postit.png");
+    }
+
+    .botones {
+        height: 100px;
+    }
+
+    #cauciones {
+        width: 150px;
+    }
+    
+    #letras {
+        width: 150px;
+    }
+    
+    #bonos {
+        width: 150px;
+    }
+    
+    #ON {
+        width: 150px;
+    }
+    
+    #acciones {
+        width: 150px;
+    }
+    
+    #cedears {
+        width: 150px;
+    }
+
+    #formulario {
+        margin-left: 500px;
+    }
+
+    #volver {
+        margin-left: 500px;
     }
 }

@@ -1,17 +1,15 @@
 
-let nombreUsuario 
-//localStorage.setItem("nombre", JSON.stringify(nombreUsuario))
+let perfilUsuario 
 
-$("#enviarNombre").click(() => {
-    nombreUsuario = $('#nombre').val()
-    localStorage.setItem("nombre", nombreUsuario)
-    console.log(localStorage.nombre)
+$("#enviarPerfil").click(() => {
+    perfilUsuario = $('#perfil').val()
+    localStorage.setItem("perfil", perfilUsuario)
+    console.log(localStorage.perfil)
     let saludo = document.createElement("div")
-    saludo.innerHTML = "<h2>Bienvenido " + localStorage.nombre + "</h2>"
-    $("#introduccion").prepend(saludo)
+    saludo.innerHTML = "<p>Tu perfil es " + localStorage.perfil + "</p>"
+    $("#paginas").prepend(saludo)
+    $("#form").fadeOut()
 })
-
-//localStorage.setItem("nombre", $("#nombre").value)
 
 $("#cauciones").click (function caucion () {
     $("#informacion").hide();
@@ -108,7 +106,7 @@ $("#cedears").click(function cedear () {
     $("#informacion").html("<p id='info'>Un cedear es una accion de una empresa que cotiza en el extranjero. En nuestro mercado es posible acceder a estos titulos mediante certificados de depositos especiales emitidos por una entidad financiera local que los custodia. Este titulo puede ser transferido a una cuenta comitente en el exterior y vendido en dolares, dando origen a un tipo de cambio conocido como 'contado con liqui' o CCL. Al estar constantemente 'copiando' una cotizacion en moneda dura de una accion extranjera, este activo es una buena opcion para el inversor que quiera cubrirse de una posible devaluacion de la moneda.</p>")
 })
 
-//let boton = $("#boton")
+let boton = $("#boton")
 
-//boton.on("click", jqueryData)
+boton.on("click", jqueryData)
 
