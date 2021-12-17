@@ -145,11 +145,13 @@ a {
 
 #info {
     font-size: 0.5em;
+    width: 100%;
 }
 
 #calculadora {
     align-self: center;
     margin-top: 2px;
+    width: 100%;
 }
 
 #formulario {
@@ -225,6 +227,7 @@ footer {
     align-self: center;
     margin-top: 2px;
     font-size: 0.5em;
+    width: 100%;
 }
 
 #datos {
@@ -263,6 +266,10 @@ i {
 
     .botones {
         height: 100px;
+    }
+
+    .botones p {
+        font-size: 1em;
     }
 
     #cauciones {
