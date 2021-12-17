@@ -139,13 +139,12 @@ a {
 }
 
 #informacion p {
-    width: 200px;
+    width: 100px;
     align-self: center;
 }
 
 #info {
     font-size: 0.5em;
-    width: 60%;
 }
 
 #calculadora {
@@ -258,11 +257,14 @@ i {
 
     #info {
         font-size: small;
-        width: 100%;
     }
 
     #informacion {
         background-image: url("../assets/postit.png");
+    }
+
+    #informacion p {
+        width: 150px;
     }
 
     .botones {
