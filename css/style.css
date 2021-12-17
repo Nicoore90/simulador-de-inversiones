@@ -145,7 +145,7 @@ a {
 
 #info {
     font-size: 0.5em;
-    width: 100%;
+    width: 60%;
 }
 
 #calculadora {
@@ -258,6 +258,7 @@ i {
 
     #info {
         font-size: small;
+        width: 100%;
     }
 
     #informacion {
