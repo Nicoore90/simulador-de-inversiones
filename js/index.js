@@ -68,7 +68,7 @@ const displayList = (jsonObject) => {
 let sector
 
 const jqueryData = () => {
-    $.get(`./data/${sector}.json`, (respuesta, estado) => {
+    $.get(`../data/${sector}.json`, (respuesta, estado) => {
         if(estado=="success") {
             console.log(respuesta)
             displayList(respuesta)
@@ -81,11 +81,11 @@ $("#acciones").click(function accion () {
     $("#informacion").slideDown(1000, ()=> {
         $("#introduccion").fadeOut();
     });
-    $("#informacion").html("<p id='info'>Una accion es una parte del capital de una empresa. Ser tenedor de una accion de cualquier empresa da derecho a cobrar dividendos cuando la empresa presente sus estados financieros trimestrales, e incluso podes asistir a las asambleas de socios.</p><div class='botones' id='boton'>Algunos ejemplos</button>")
+    $("#informacion").html("<p id='info'>Una accion es una parte del capital de una empresa. Ser tenedor de una accion de cualquier empresa da derecho a cobrar dividendos cuando la empresa presente sus estados financieros trimestrales, e incluso podes asistir a las asambleas de socios.</p><div class='botones' id='boton'><p>Algunos ejemplos</p></button>")
     let boton = $("#boton")
     boton.on("click", () => {
-        $("#selector").show()
-        $("#ver").show()
+        $("#selector").slideDown()
+        $("#ver").slideDown()
         $("#ver").click(() => {
             sector = $("#selector").val()
             jqueryData()

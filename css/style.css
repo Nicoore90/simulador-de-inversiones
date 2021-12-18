@@ -15,7 +15,11 @@ main {
     background-image: url("../assets/fondo.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 1500px;
+    height: 1000px;
+}
+
+#mainActivos {
+    height: 2000px;
 }
 
 #paginas {
@@ -41,7 +45,12 @@ a {
     padding: 15px;
 }
 
+#introduccion h2 {
+    margin-top: 2em;
+}
+
 #introduccion p {
+    margin-top: 2em;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -86,6 +95,7 @@ a {
     align-items: center;
     margin: 20px;
     height: 100px;
+    margin-top: 100px;
 }
 
 .botones p{
@@ -272,6 +282,10 @@ i {
     }
 
     .botones p {
+        font-size: 1em;
+    }
+
+    .botones a {
         font-size: 1em;
     }
 
