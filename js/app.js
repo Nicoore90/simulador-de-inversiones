@@ -35,10 +35,6 @@ let eftDolares
 
 let ticker
 
-//let boton = document.getElementById("calcular");
-
-//boton.addEventListener("click", calcular);
-
 $("#calcular").click (function calcular(e) {
     e.preventDefault();
     monto = parseInt($("#importe").val());
